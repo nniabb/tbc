@@ -1,0 +1,44 @@
+*::before,*::after,*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--section-color);
+}
+
+:root{
+    --header-color: rgb(26, 30, 31);
+    --section-color: rgb(43, 43, 43);
+    --paragraphs-color: #F4F4F4;
+}
+
+header{
+    width: 100%;
+    background-color: var(--header-color);
+    display: flex;
+    align-items: center;
+    padding: 7% 6%;
+}
+
+.tbclogo{
+    background: transparent;
+}
+
+
+.bckg-imgside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1440px){
+    .bckg-imgside{
+        width: 100%;
+    }
+}
+
+.p-aboutprogramm{
+    color: var(--paragraphs-color);
+    font-size: 24px;
+}
+
