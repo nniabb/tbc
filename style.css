@@ -2,43 +2,334 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: var(--section-color);
 }
 
 :root{
     --header-color: rgb(26, 30, 31);
     --section-color: rgb(43, 43, 43);
     --paragraphs-color: #F4F4F4;
+    --skyblue-color: #00AEF3;
+    --courses-section-color: rgb(22, 22, 22);
+    --footer-color: rgb(30, 33, 34);
+}
+
+
+
+.flex-direction-column,
+.bckg-imgside,
+.card,
+.footer,
+.rules,
+.info-about-program,
+.course-info,
+.partners,
+.slide,
+.faqs,
+.faqsbox{
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+.display-flex,
+.contactside,
+.c-det,
+.question{
+    display: flex;
+}
+
+.transparent,
+.tbclogo,
+.arrow,
+.c-det,
+h1,
+.course-details,
+.course-name,
+.registration,
+.tbcxusaid{
+    background-color: transparent;
 }
 
 header{
     width: 100%;
     background-color: var(--header-color);
-    display: flex;
     align-items: center;
-    padding: 7% 6%;
+    padding: 6%;
 }
 
-.tbclogo{
-    background: transparent;
+#section1{
+    background-color: var(--section-color);
 }
 
+#section2{
+    background-color: var(--courses-section-color);
+}
+
+#section3{
+    background-color: var(--section-color);
+}
+
+#section4{
+    background-color: var(--courses-section-color);
+}
 
 .bckg-imgside{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
+    .bckg-imgside {
+      width: 100%;
+    }
+}
+ 
+@media screen and (max-width: 786px){
     .bckg-imgside{
-        width: 100%;
+        height: 320px;
     }
 }
 
-.p-aboutprogramm{
+.p-aboutprogram{
+    color: var(--paragraphs-color);
+    font-size: 24px;
+    font-family: 'saba';
+}
+
+.tbcxusaid{
+    color: var(--paragraphs-color);
+    position: absolute;
+    font-size: 34px;
+    width: 280px;
+    height: 117px;
+    left: 9%;
+    line-height: 45px;
+    font-family: 'saba';
+}
+
+.info-about-program{
+    padding: 10% 5%;
+    gap: 50px;
+}
+
+.skyblue{
+    color: var(--skyblue-color);
+    cursor: pointer;
+}
+
+h1{
+    color: white;
+    font-size: 36px;
+}
+
+.learning-courses-side{
+    padding: 5% 7% 8% 7%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    background-color: var(--courses-section-color);
+    gap: 40px;
+}
+
+.card{
+    background-color: var(--courses-section-color);
+    width: 360px;
+    justify-self: center;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.course-info{
+    gap: 15px;
+    padding: 9% 5% 10% 5%;
+    background-color: var(--courses-section-color);
+}
+
+.courselogo{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.course-name{
+    font-size: 21px;
+    color: var(--paragraphs-color);
+}
+
+.registration{
+    font-size: 21px;
+    color: var(--paragraphs-color);
+}
+
+.course-details{
+    font-size: 21px;
+    color: var(--skyblue-color);
+}
+
+.footer{
+    background-color: var(--footer-color);
+    padding: 10% 10% 18% 10%;
+    gap: 40px;
+}
+
+.ftrlogo{
+    width: 150px;
+    height: 42px;
+}
+
+.btn-1{
+    width: 145px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--skyblue-color);
+    margin-right: 60px;
+}
+
+.contactside{
+    gap: 15px;
+}
+
+.socials{
+    width: 47px;
+    height: 47px;
+}
+
+.rules{
+    gap: 15px;
+}
+
+.h3rules{
+    color: var(--paragraphs-color);
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.partners{
+    gap: 70px;
+    padding: 5% 9% 15% 9%;
+}
+
+h2{
+    color: white;
+}
+
+.slider-container {
+    max-width: 800px;
+    overflow: hidden;
+  }  
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+  
+.slide {
+    padding: 0 7%;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+  
+.img {
+    width: 90%;
+    height: auto;
+}
+
+.spcnt{
+    width: 70%;
+}  
+
+.tnt{
+    width: 90%;
+}
+
+.tgt{
+    width: 80%;
+}
+
+.spctr{
+    width: 55%;
+}
+
+.faqs{
+    gap: 30px;
+    padding: 13% 7% 15% 7%;
+}
+
+.faqsbox{
+    border-bottom: 1px solid gray;
+    padding: 7% 0;
+    gap: 20px;
+}
+
+.arrow2{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.question{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-p{
     color: var(--paragraphs-color);
     font-size: 24px;
 }
+
+.faqs-h1{
+    font-size: 30px;
+}
+
+.faqs-h3{
+    margin-top: 40px;
+    align-self: center;
+    color: var(--skyblue-color);
+    font-size: 25px;
+}
+
+.answer{
+    display: none;
+}
+
+.faqsbox.active .answer{
+    display: block;
+}
+
+.faqsbox.active .arrow2{
+    transform: rotate(180deg);
+    transition: 0.2s;
+}
+
+.answer1,
+.answer2,
+.answer3{
+    color: var(--paragraphs-color);
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.answer1-2{
+    color: var(--paragraphs-color);
+    margin: 12% 5%;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.answer1-3{
+    color: var(--paragraphs-color);
+    font-size: 19px;
+    line-height: 40px;
+    margin: 0 1%;
+}
+
 
